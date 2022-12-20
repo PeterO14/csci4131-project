@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+
+        block link
+            link(href='css/style.css' rel='stylesheet')
+
+        block script
+            script(defer='' src='js/create.js')
+
+        meta(charset='UTF-8')
+
+        block title
+            title Create Note 
+
+        body
+            div.container-top
+                div.note
+                    div.note-body(contenteditable)
+
+                form.filter(action='/create' method='get')
+                    fieldset.filter-options
+                        input#all(type='radio' name='filter' value='all')
+                        label(for='all') All
+                        input#question(type='radio' name='filter' value='done')
+                        label(for='question') Done
+                        input#comment(type='radio' name='filter' value='not-done')
+                        label(for='comment') Not Done
+                    button.filter-btn Filter
+
+            div.container
+                each entry in notes
+                    if entry["done"] == 0
+                        div.note-logs
+                            div.info
+                                span.note-txt= entry["note"]
+                            div.actions
+                                button.status
+                                i.gg-trash.trash
+
+                    else 
+                        div.note-logs
+                            div.info
+                                span.note-txt= entry["note"]
+                            div.actions
+                                button.status-2
+                                i.gg-trash.trash
+

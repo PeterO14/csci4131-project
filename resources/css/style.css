@@ -1,0 +1,136 @@
+@import url('https://css.gg/trash.css');
+
+body {
+    background-color: #2b2d42;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-top { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.note {
+    background-color: #2b2d42;
+    color: #ffffff;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 0.75rem;
+    width: 40%;
+    max-height: 10rem;
+    overflow: auto; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.note-body {
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    outline: 0px solid transparent;
+}
+
+.filter {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-options {
+    border: 0;
+    font-size: 1rem;
+}
+
+.filter-btn {
+    color: #2b2d42;
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+}
+
+.note-logs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 0.4rem;
+    margin: 0.25rem;
+    width: 19%;
+    min-height: 4rem;
+    max-height: 10rem;
+}
+
+.info {
+    overflow: auto;
+    width: 100%;
+}
+
+.note-txt {
+    margin: 0.5rem;
+    white-space: pre-line;
+    display: inline-block;
+    width: 90%;
+    word-wrap: break-word;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status {
+    margin: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 0.4rem;
+    background: none;
+    margin-bottom: auto;
+}
+
+.status:hover {
+    background-color: #92dce5;
+}
+
+.status-2 {
+    margin: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 0.4rem;
+    background-color: #92dce5;
+    margin-bottom: auto;
+}
+
+.trash {
+    margin: 0.5rem;
+    margin-top: auto;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+  }
